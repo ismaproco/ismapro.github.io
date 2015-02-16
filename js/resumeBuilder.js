@@ -139,7 +139,13 @@ var projects = {
     	title: 'deberia ser festivo android app',
     	dates: '02/02/2013',
     	description: 'Images application of the Tumblr blog "deberia ser festivo" deberiaserfestivo.com',
-    	images: ['https://lh4.ggpht.com/VK94Bpr0v6cNkxsESZamiLtouKOwjbAyNtWzHWibtgQ4bDPQ_OfzhbPTKC1-1XP04hk=h900-rw']
+    	images: ['images/android.jpg']
+    },
+    {
+    	title: 'Frogger HTML5 Arcade',
+    	dates: '02/02/2015',
+    	description: 'Little HTML5 game, similar to the classic NES frogger game, it uses the web canvas, identify keyboard strokes, and has an score!',
+    	images: ['images/arcade.jpg']
     }],
     display: function(){
 
