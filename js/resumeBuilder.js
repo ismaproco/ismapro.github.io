@@ -133,7 +133,7 @@ var projects = {
 		title: 'Ismapro Blog',
         dates: '11/01/2011',
         description: 'Build the intranet for Vetra consulting, using SharePoint 2010',
-        images: ['https://ismapro.files.wordpress.com/2015/01/ismapro-blog.png']
+        images: ['images/ismapro-blog.jpg']
     },
     {
     	title: 'deberia ser festivo android app',
