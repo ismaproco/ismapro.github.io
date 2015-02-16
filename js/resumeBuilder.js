@@ -143,7 +143,7 @@ var projects = {
     },
     {
     	title: 'Frogger HTML5 Arcade',
-    	dates: '02/02/2015',
+    	dates: '01/25/2015',
     	description: 'Little HTML5 game, similar to the classic NES frogger game, it uses the web canvas, identify keyboard strokes, and has an score!',
     	images: ['images/arcade.jpg']
     }],
