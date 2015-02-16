@@ -20,34 +20,8 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
   <!-- Tells the browser what the title of this page should be. -->
   <title>Resume</title>
-  <link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
   <!-- Load the page styles. -->
   <link href="css/style.css" rel="stylesheet" type="text/css">
-
-  <!--
-  jQuery is a common JavaScript library for reading and making changes to the
-  Document Object Model (DOM). The DOM is a tree that contains information
-  about what is actually visible on a website.
-
-  While HTML is a static document, the browser converts HTML to the
-  DOM and the DOM can change. In fact, JavaScript's power comes from
-  its ability to manipulate the DOM, which is essentially a JavaScript
-  object. When JavaScript makes something interesting happen on a
-  website, it's likely the action happened because JavaScript changed
-  the DOM. jQuery is fast and easy to use, but it doesn't do anything
-  you can't accomplish with vanilla (regular) JavaScript.
-  -->
-  <script src="js/jQuery.js"></script>
-
-  <!-- More on helper.js in the class -->
-  <script src="js/helper.js"></script>
-
-  <!--
-  Uncomment the <script> tag below when you're ready to add an interactive
-  Google Map to your resume!
-  -->
-  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-
   <meta name="viewport" content="width=device-width">
 </head>
 <body unresolved>
@@ -82,14 +56,6 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       </ul>
     </div>
   </div>
-
-  <!--
-  The next line tells the browser where to download the JavaScript file you'll be
-  writing. In resumeBuilder.js, you'll be writing code that builds the resume
-  dynamically when this website, index.html, is opened.
-  -->
-  <script src="js/resumeBuilder.js"></script>
-
 
   <!--
   These scripts are written in JavaScript. You'll be breaking them down as part of
@@ -136,5 +102,37 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       document.getElementById('mapDiv').style.display = 'none';
     }
   </script>
+
+  <!--
+  jQuery is a common JavaScript library for reading and making changes to the
+  Document Object Model (DOM). The DOM is a tree that contains information
+  about what is actually visible on a website.
+
+  While HTML is a static document, the browser converts HTML to the
+  DOM and the DOM can change. In fact, JavaScript's power comes from
+  its ability to manipulate the DOM, which is essentially a JavaScript
+  object. When JavaScript makes something interesting happen on a
+  website, it's likely the action happened because JavaScript changed
+  the DOM. jQuery is fast and easy to use, but it doesn't do anything
+  you can't accomplish with vanilla (regular) JavaScript.
+  -->
+  <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+  <!--
+  Uncomment the <script> tag below when you're ready to add an interactive
+  Google Map to your resume!
+  -->
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
+  <!-- More on helper.js in the class -->
+  <script src="js/helper.js"></script>
+  <!--
+  The next line tells the browser where to download the JavaScript file you'll be
+  writing. In resumeBuilder.js, you'll be writing code that builds the resume
+  dynamically when this website, index.html, is opened.
+  -->
+  <script src="js/resumeBuilder.js"></script>
+
+  <link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
+
 </body>
 </html>
