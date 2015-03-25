@@ -1,6 +1,5 @@
-# ismaproco.github.io
-
-This is my portfolio.
+This is the repository of my Personal Portfolio.
+--------------
 
 It was created as a project for the nanodegree course in udacity, and I decided to keep it as my personal portfolio page.
 
