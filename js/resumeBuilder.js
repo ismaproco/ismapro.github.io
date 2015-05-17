@@ -79,10 +79,9 @@ var education = {
 		});
 
 		/* Education online courses */
-
+		$('#education').append( HTMLonlineClasses );
 		education.onlineCourses.map( function(course) {
 			var entry = $( HTMLschoolStart );
-			entry.append( HTMLonlineClasses );
 			entry.append( HTMLonlineTitle.replace( '%data%' , course.title ) +
 							HTMLonlineSchool.replace( '%data%' , course.school ) );
 			entry.append( HTMLonlineDates.replace( '%data%' , course.date ) );
