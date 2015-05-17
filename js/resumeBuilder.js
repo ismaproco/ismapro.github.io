@@ -56,6 +56,12 @@ var education = {
         school: 'Team Three House',
         date: 2014,
         url: 'https://teamtreehouse.com/'
+	},
+	{
+        title: 'Frontend Web Developer Nanodegree',
+        school: 'udacity',
+        date: 2015,
+        url: 'https://udacity.com/'
 	}],
 	display: function(){
 
