@@ -1,11 +1,11 @@
 /*
 
-This file contains all of the code running in the background that makes 
+This file contains all of the code running in the background that makes
 resumeBuilder.js possible. We call these helper functions because they
 support your code in this course.
 
 Don't worry, you'll learn what's going on in this file throughout the course.
-You won't need to make any changes to it until you start experimenting with 
+You won't need to make any changes to it until you start experimenting with
 inserting a Google Map in Problem Set 3.
 
 Cameron Pittman
@@ -23,7 +23,7 @@ var classHeaderText = 'darkred-text';
 var HTMLheaderName = '<div class="header-name"><h1 id="name">%data%</h1>';
 var HTMLheaderRole = '<span>%data%</span></div>';
 
-var HTMLcontactGeneric = '<li class="flex-item"><span class="' + classHeaderText + '">' + 
+var HTMLcontactGeneric = '<li class="flex-item"><span class="' + classHeaderText + '">' +
                 '%contact%</span><span class="' + classHeaderSubText
                                                    + '">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="' + classHeaderText + '">' +
@@ -35,7 +35,7 @@ var HTMLemail = '<li class="flex-item"><span class="' + classHeaderText + '">' +
 var HTMLtwitter = '<li class="flex-item"><span class="' + classHeaderText + '">' +
                 'twitter</span><span class="' + classHeaderSubText
                                                    + '">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><span class="' + classHeaderText + '">' + 
+var HTMLgithub = '<li class="flex-item"><span class="' + classHeaderText + '">' +
                 'github</span><span class="' + classHeaderSubText
                                                    + '">%data%</span></li>';
 var HTMLblog = '<li class="flex-item"><span class="' + classHeaderText + '">blog' +
@@ -61,7 +61,7 @@ var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<a href="#">%data%</a>';
+var HTMLprojectTitle = '<a href="%data-link%">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
@@ -84,14 +84,14 @@ var googleMap = '<div id="map"></div>';
 
 
 /*
-The International Name challenge in Lesson 2 where you'll create a function 
-that will need this helper code to run. Don't delete! 
+The International Name challenge in Lesson 2 where you'll create a function
+that will need this helper code to run. Don't delete!
 It hooks up your code to the button you'll be appending.
 */
 $(document).ready(function() {
   $('button').click(function() {
     var iName = inName(name) || function(){};
-    $('#name').html(iName);  
+    $('#name').html(iName);
   });
 });
 

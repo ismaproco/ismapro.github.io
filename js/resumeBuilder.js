@@ -15,29 +15,29 @@ var bio = {
     biopic: '/images/avatar.jpg',
     display: function() {
     	/* header title */
-		$("#header").prepend( HTMLheaderName.replace("%data%", bio.name) + 
-								HTMLheaderRole.replace("%data%", bio.role) );
+			$("#header").prepend( HTMLheaderName.replace("%data%", bio.name) +
+									HTMLheaderRole.replace("%data%", bio.role) );
 
-		/* header contacts */
+			/* header contacts */
 
-		Object.keys(bio.contacts).map(function(key){
-			$('#topContacts').append( HTMLcontactGeneric.replace( '%contact%',key )
-							.replace( '%data%' , bio.contacts[key] ) );
-		});
+			Object.keys(bio.contacts).map(function(key){
+				$('#topContacts').append( HTMLcontactGeneric.replace( '%contact%',key )
+								.replace( '%data%' , bio.contacts[key] ) );
+			});
 
-		/* header image and welcome message */
-		$('#header').prepend( HTMLbioPic.replace( '%data%', bio.biopic ) );
+			/* header image and welcome message */
+			$('#header').prepend( HTMLbioPic.replace( '%data%', bio.biopic ) );
 
 
-		/* header Skill section */
-		$('#basicInformation').append( HTMLskillsStart );	
+			/* header Skill section */
+			$('#basicInformation').append( HTMLskillsStart );
 
-		bio.skills.map( function( skill ){
-			$('#skills').append( HTMLskills.replace( '%data%', skill ) );
-		});
+			bio.skills.map( function( skill ){
+				$('#skills').append( HTMLskills.replace( '%data%', skill ) );
+			});
 
-		$('.header-name').append( 
-					HTMLWelcomeMsg.replace( '%data%', bio.welcomeMessage ) );
+			$('.header-name').append(
+						HTMLWelcomeMsg.replace( '%data%', bio.welcomeMessage ) );
     }
 }
 
@@ -93,17 +93,17 @@ var education = {
 var work = {
 	 jobs: [{
 		employer: 'Intertec International',
-		title: 'Web Developer',
+		title: 'Application Developer',
 		location: 'Costa Rica',
 		dates: '12/12/2012',
-		description: 'Work as a Vendor for Wells Fargo Bank, at the Information Security Area, as SharePoint Developer for internal projects.The projects include, create business dashboard for the managers, build intelligent forms using jQuery and InfoPath, Administration of Lists and Libraries data, and maintaining the Teams environment.',		
+		description: 'Work as a Vendor for Wells Fargo Bank, at the Information Security Area, as SharePoint Developer for internal projects.The projects include, create business dashboard for the managers, build intelligent forms using jQuery and InfoPath, Administration of Lists and Libraries data, and maintaining the Teams environment.',
 	 },
 	 {
-		employer: 'SharePoint Support Engineer', 
+		employer: 'SharePoint Support Engineer',
 		title: 'Quintec',
 		location: 'Colombia',
 		dates: '02/01/2011-12/01/2012',
-		description: 'Build new characteristics and client based solutions for SharePoint 2010 enterprise sites and also bring support to current installations, some of the tools that have been created are auction sites with HTML5 and CSS3 combined with SharePoint Master Pages, to bring live results to the contestants, also was part of the team for the BI dashboard for the ETB (Primary Bogotá Telephone Company) in Bogotá Colombia.',		
+		description: 'Build new characteristics and client based solutions for SharePoint 2010 enterprise sites and also bring support to current installations, some of the tools that have been created are auction sites with HTML5 and CSS3 combined with SharePoint Master Pages, to bring live results to the contestants, also was part of the team for the BI dashboard for the ETB (Primary Bogotá Telephone Company) in Bogotá Colombia.',
 	 },
 	 {
 		employer: 'Software Developer' ,
@@ -129,34 +129,39 @@ var work = {
 /* projects json */
 
 var projects = {
-	projects: [{
-		title: 'Ismapro Blog',
-        dates: '11/01/2011',
-        description: 'Build the intranet for Vetra consulting, using SharePoint 2010',
-        images: ['images/ismapro-blog.jpg']
-    },
-    {
-    	title: 'deberia ser festivo android app',
-    	dates: '02/02/2013',
-    	description: 'Images application of the Tumblr blog "deberia ser festivo" deberiaserfestivo.com',
-    	images: ['images/android.jpg']
+	projects: [
+		{
+			title: 'Ismapro Blog',
+      dates: '11/01/2011',
+      description: 'Professional blog with different update with my findings, and solutions in various technologies',
+      images: ['images/ismapro-blog.jpg'],
+			link: 'http://ismapro.com/'
     },
     {
     	title: 'Frogger HTML5 Arcade',
     	dates: '01/25/2015',
     	description: 'Little HTML5 game, similar to the classic NES frogger game, it uses the web canvas, identify keyboard strokes, and has an score!',
-    	images: ['images/arcade.jpg']
-    }],
+    	images: ['images/arcade.jpg'],
+			link: 'http://ismapro.co/arcade/'
+    },
+		{
+			title: 'NanoMaps',
+			dates: '04/01/2015',
+			description: 'Fifth project of the nanodegree certification that shows places in a Google Map with the use of APIs like: Foursquare, LastFM, and instagram',
+			images: ['images/nanomaps.jpg'],
+			link: 'http://ismapro.co/nanomaps/'
+		}],
     display: function(){
 
     	projects.projects.map( function( project ) {
 			var entry = $( HTMLprojectStart );
-			entry.append( HTMLprojectTitle.replace( '%data%' , project.title ) );
+
+			entry.append( HTMLprojectTitle.replace( '%data%' , project.title ).replace( '%data-link%' , project.link ) );
 			entry.append( HTMLprojectDates.replace( '%data%' , project.dates ) );
 			entry.append( HTMLprojectDescription.replace( '%data%' , project.description ) );
 
 			project.images.map( function( img ) {
-				entry.append( HTMLprojectImage.replace( '%data%' , img ) );		
+				entry.append( HTMLprojectImage.replace( '%data%' , img ) );
 			});
 
 			$('#projects').append( entry );
