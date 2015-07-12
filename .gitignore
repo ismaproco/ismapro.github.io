@@ -1,0 +1,5 @@
+#bower files
+/bower_components/
+
+#node files
+/node_modules/
