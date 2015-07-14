@@ -1,0 +1,8 @@
+{
+  "name": "ismaproco.github.io",
+  "version": "0.1.0",
+  "deDependencies": {
+    "gulp":"^3.5.0",
+    "gulp-concat": "~2.1.7"
+  }
+}
