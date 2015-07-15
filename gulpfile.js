@@ -10,8 +10,8 @@ gulp.task('scripts', function() {
         'bower_components/bootstrap-material-design/scripts/*.js'])
       .pipe(concat('libs.js'))
       .pipe(rename({suffix: '.min'}))
-        .pipe(uglify())
-      .pipe(gulp.dest('js'));
+      .pipe(uglify())
+      .pipe(gulp.dest('build'));
 });
 
 var sass = require('gulp-ruby-sass');
@@ -20,7 +20,7 @@ gulp.task('css', function() {
     return gulp.src(['bower_components/bootstrap-material-design/dist/css/*.css'])
       .pipe(concat('external.css'))
       .pipe(rename({suffix: '.min'}))
-      .pipe(gulp.dest('css'));
+      .pipe(gulp.dest('build'));
 });
 
 gulp.task('watch', function() {
