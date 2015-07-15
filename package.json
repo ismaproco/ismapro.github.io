@@ -1,8 +1,11 @@
 {
   "name": "ismaproco.github.io",
   "version": "0.1.0",
-  "deDependencies": {
-    "gulp":"^3.5.0",
-    "gulp-concat": "~2.1.7"
+  "devDependencies": {
+    "gulp": "^3.5.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-uglify": "^1.2.0"
   }
 }
