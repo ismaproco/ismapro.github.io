@@ -24,26 +24,26 @@ var HTMLheaderName = '<div class="header-name"><h1 id="name">%data%</h1>';
 var HTMLheaderRole = '<span>%data%</span></div>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="' + classHeaderText + '">' +
-                '%contact%</span><span class="' + classHeaderSubText
-                                                   + '">%data%</span></li>';
+                '%contact%</span><span class="' + classHeaderSubText + 
+                '">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="' + classHeaderText + '">' +
-                'mobile</span><span class="' + classHeaderSubText
-                                                   + '">%data%</span></li>';
+                'mobile</span><span class="' + classHeaderSubText +
+                '">%data%</span></li>';
 var HTMLemail = '<li class="flex-item"><span class="' + classHeaderText + '">' +
-                'email</span><span class="' + classHeaderSubText
-                                                   + '">%data%</span></li>';
+                'email</span><span class="' + classHeaderSubText +
+                '">%data%</span></li>';
 var HTMLtwitter = '<li class="flex-item"><span class="' + classHeaderText + '">' +
-                'twitter</span><span class="' + classHeaderSubText
-                                                   + '">%data%</span></li>';
+                'twitter</span><span class="' + classHeaderSubText +
+                '">%data%</span></li>';
 var HTMLgithub = '<li class="flex-item"><span class="' + classHeaderText + '">' +
-                'github</span><span class="' + classHeaderSubText
-                                                   + '">%data%</span></li>';
+                'github</span><span class="' + classHeaderSubText + 
+                '">%data%</span></li>';
 var HTMLblog = '<li class="flex-item"><span class="' + classHeaderText + '">blog' +
-                '</span><span class="' + classHeaderSubText
-                                                   + '">%data%</span></li>';
+                '</span><span class="' + classHeaderSubText +
+                '">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="' + classHeaderText + '">' +
-                'location</span><span class="' + classHeaderSubText
-                                                   + '">%data%</span></li>';
+                'location</span><span class="' + classHeaderSubText +
+                '">%data%</span></li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLWelcomeMsg = '<span class="welcome-message">%data%</span>';

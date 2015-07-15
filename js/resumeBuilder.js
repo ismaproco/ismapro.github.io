@@ -39,7 +39,7 @@ var bio = {
 			$('.header-name').append(
 						HTMLWelcomeMsg.replace( '%data%', bio.welcomeMessage ) );
     }
-}
+};
 
 /* education json */
 var education = {
@@ -91,7 +91,7 @@ var education = {
 		});
 
 	}
-}
+};
 
 /* work json*/
 
@@ -129,7 +129,7 @@ var work = {
 			$('#workExperience').append(work);
 		});
 	 }
-}
+};
 
 /* projects json */
 
@@ -173,7 +173,7 @@ var projects = {
 		});
 
     }
-}
+};
 
 
 /*
