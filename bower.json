@@ -1,7 +1,7 @@
 {
-  "name":"ismaproco.github.io",
+  "name": "ismaproco.github.io",
   "dependencies": {
-    "jquery":">=2.0",
-    "bootstrap-material-design":">=0.3.0"
+    "jquery": ">=2.0",
+    "material-design-lite": "~1.0.0"
   }
 }
