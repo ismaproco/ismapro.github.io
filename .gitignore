@@ -3,3 +3,6 @@
 
 #node files
 /node_modules/
+
+#macosx hidden files
+.DS_Store
