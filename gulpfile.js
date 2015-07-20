@@ -11,7 +11,8 @@ var sass = require('gulp-ruby-sass');
 
 gulp.task('scripts', function() {
     return gulp.src(['bower_components/jquery/dist/jquery.js',
-        'bower_components/material-design-lite/material.js'])
+        'bower_components/material-design-lite/material.js',
+        'bower_components/angular/angular.js'])
       .pipe(concat('libs.js'))
       .pipe(rename({suffix: '.min'}))
       .pipe(uglify())
