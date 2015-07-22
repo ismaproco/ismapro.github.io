@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,7 +49,19 @@
                      <h2 class="mdl-card__title-text">Welcome to my portfolio</h2>
                   </div>
                   <div class="mdl-card__supporting-text">
-                  In this portfolio you will find the my experience as Web Developer, the main projects I hed work on and some other details about me.
+                  In this portfolio you will find the my experience as Web Developer, the main projects I hed work on and some other details about me. {{1+1}}
+                  </div>
+                </div>
+                <div class="mdl-card mdl-cell--6-col mdl-cell--8-col-tablet mdl-shadow--4dp welcome-card" ng-controller="basicInformation as information">
+                  <div class="mdl-card__title">
+                     <h2 class="mdl-card__title-text">Contact Information</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <ul>
+                        <li><span class="contact-text">email<span>{{bio.contacts.email}}</li>
+                        <li><span class="contact-text">github<span>{{bio.contacts.github}}</li>
+                        <li><span class="contact-text">twitter<span>{{bio.contacts.twitter}}</li>
+                    </ul>    
                   </div>
                 </div>
             </div>
