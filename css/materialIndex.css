@@ -1,3 +1,5 @@
+/* page styles */
+
 .header-material {
   background: url('/images/background.png') center / cover;
 }
@@ -6,16 +8,8 @@ h1 {
     color: #0000ac;
 }
 
-
 .big-header {
     height: 250px;
-}
-
-.biopic {
-    display: block;
-    border-radius: 50%;
-    margin-right: 35px;
-    width: 100px;
 }
 
 .portfolio-content {
@@ -32,10 +26,32 @@ h1 {
           flex-shrink: 0;
 }
 
+.inline-title {
+  margin: 0 10px 0 0;
+  text-transform: capitalize;
+}
+
+/* grid and card styles */
+
 .welcome-grid {
     width: 100%;
 }
 
-.welcome-card {
-    height: 200px
+.mdl-card {
+  margin: 10px 0 0 0;
+}
+
+/* custom cards styles*/
+
+.welcome-title {
+  display: block;
+  margin: 0 10px 0 0;
+  font-size: 28px;
+}
+
+.biopic {
+    display: block;
+    border-radius: 50%;
+    margin: 0 35px 0 0;
+    width: 100px;
 }
