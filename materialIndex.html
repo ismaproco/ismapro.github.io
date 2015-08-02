@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,7 +32,7 @@
 
     <script type="text/javascript" src="js/app.js"></script>
 </head>
-<body>
+<body ng-app="portfolio">
     <div class="mdl-layout mdl-js-layout has-drawer is-upgraded mdl-layout--fixed-header">
         <header class="mdl-layout__header header-material">
             <div class="mdl-layout-icon"></div>
@@ -42,25 +42,29 @@
             </div>
         </header>    
         <main class="portfolio-content mdl-layout__content">
-            <div class="mdl-grid welcome-grid">
-                <div class="mdl-card mdl-cell--6-col mdl-cell--8-col-tablet mdl-shadow--4dp welcome-card">
+            <div class="mdl-grid welcome-grid" ng-controller="basicInformation as information">
+                <div class="mdl-card mdl-cell--6-col mdl-cell--8-col-tablet mdl-shadow--4dp">
                   <div class="mdl-card__title">
                      <img src="/images/avatar.jpg" alt="avatar" class="biopic">
-                     <h2 class="mdl-card__title-text">Welcome to my portfolio</h2>
+                     <h2>
+                      <span class="welcome-title">{{information.bio.name}}</span>
+                      <span class="welcome-title">{{information.bio.role}}</span>
+                     </h2>
                   </div>
                   <div class="mdl-card__supporting-text">
-                  In this portfolio you will find the my experience as Web Developer, the main projects I hed work on and some other details about me. {{1+1}}
+                  {{information.bio.welcomeDescription}}
                   </div>
                 </div>
-                <div class="mdl-card mdl-cell--6-col mdl-cell--8-col-tablet mdl-shadow--4dp welcome-card" ng-controller="basicInformation as information">
+                <div class="mdl-card mdl-cell--6-col mdl-cell--8-col-tablet mdl-shadow--4dp">
                   <div class="mdl-card__title">
                      <h2 class="mdl-card__title-text">Contact Information</h2>
                   </div>
                   <div class="mdl-card__supporting-text">
                     <ul>
-                        <li><span class="contact-text">email<span>{{bio.contacts.email}}</li>
-                        <li><span class="contact-text">github<span>{{bio.contacts.github}}</li>
-                        <li><span class="contact-text">twitter<span>{{bio.contacts.twitter}}</li>
+                        <li><span class="inline-title">email</span>{{information.bio.contacts.email}}</li>
+                        <li><span class="inline-title">github</span>{{information.bio.contacts.github}}</li>
+                        <li><span class="inline-title">twitter</span>{{information.bio.contacts.twitter}}</li>
+                        <li><span class="inline-title">blog</span>{{information.bio.contacts.blog}}</li>
                     </ul>    
                   </div>
                 </div>
