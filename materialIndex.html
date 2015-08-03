@@ -42,7 +42,10 @@
             </div>
         </header>    
         <main class="portfolio-content mdl-layout__content">
+
             <div class="mdl-grid welcome-grid" ng-controller="basicInformation as information">
+                
+                <!-- welcome card-->
                 <div class="mdl-card mdl-cell--6-col mdl-cell--8-col-tablet mdl-shadow--4dp">
                   <div class="mdl-card__title">
                      <img src="/images/avatar.jpg" alt="avatar" class="biopic">
@@ -55,6 +58,8 @@
                   {{information.bio.welcomeDescription}}
                   </div>
                 </div>
+
+                <!-- basic information card-->
                 <div class="mdl-card mdl-cell--6-col mdl-cell--8-col-tablet mdl-shadow--4dp">
                   <div class="mdl-card__title">
                      <h2 class="mdl-card__title-text">Contact Information</h2>
@@ -66,6 +71,35 @@
                         <li><span class="inline-title">twitter</span>{{information.bio.contacts.twitter}}</li>
                         <li><span class="inline-title">blog</span>{{information.bio.contacts.blog}}</li>
                     </ul>    
+                  </div>
+                </div>
+                
+                <!-- skills card -->
+                <div class="mdl-card mdl-cell--6-col mdl-cell--8-col-tablet mdl-shadow--4dp">
+                  <div class="mdl-card__title">
+                     <h2 class="mdl-card__title-text">Skills</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <ul>
+                        <li ng-repeat="skill in information.bio.skills"><span class="inline-title">{{skill}}</span></li>
+                    </ul>    
+                  </div>
+                </div>
+
+                <!-- work experience grid -->
+                <div class="mdl-card mdl-cell--12-col mdl-shadow--4dp">
+                  <div class="mdl-card__title">
+                     <h2 class="mdl-card__title-text">Work Experience</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <ul>
+                      <li ng-repeat="work in information.work" class="work-border">
+                          <div>employeer {{work.employeer}}</div>
+                          <div>title {{work.title}}</div>
+                          <div>location {{work.location}}</div>
+                          <div>dates {{work.dates}}</div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
             </div>
