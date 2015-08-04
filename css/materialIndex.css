@@ -96,4 +96,20 @@ ul {
   padding: 10px 0 10px 0;
 }
 
+.work-experience ul li span{
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.work-experience ul li div:nth-child(1){
+  float:right;
+  color: #cccccc;
+  font-style: italic;
+}
+
+.work-experience ul li div:nth-child(2){
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
 
