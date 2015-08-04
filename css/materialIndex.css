@@ -29,6 +29,7 @@ h1 {
 .inline-title {
   margin: 0 10px 0 0;
   text-transform: capitalize;
+  font-weight: bold;
 }
 
 ul {
@@ -91,7 +92,8 @@ ul {
 }
 
 .work-experience ul li {
-  border-bottom: 1px solid #B39DDB ;
+  border-bottom: 1px solid #B39DDB;
+  padding: 10px 0 10px 0;
 }
 
 
