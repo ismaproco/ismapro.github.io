@@ -31,14 +31,22 @@ h1 {
   text-transform: capitalize;
 }
 
-/* grid and card styles */
+ul {
+  list-style-type: none;
+}
 
+/* grid and card styles */
 .welcome-grid {
     width: 100%;
 }
 
 .mdl-card {
   margin: 10px 0 0 0;
+}
+
+.card-header {
+  height: 80px;
+  color: #fff;
 }
 
 /* custom cards styles*/
@@ -55,3 +63,35 @@ h1 {
     margin: 0 35px 0 0;
     width: 100px;
 }
+
+
+/* contact information */
+
+.contact-information .card-header{
+  background-color: #3F51B5; /* Indigo*/
+}
+
+.contact-information ul li {
+  border-bottom: 1px solid #9FA8DA ;
+}
+/* skills styles */
+
+.skills .card-header {
+  background-color: #2196F3; /* Blue */
+}
+
+.skills ul li {
+  border-bottom: 1px solid #90CAF9 ;
+}
+
+/* work experience styles */
+
+.work-experience .card-header {
+  background-color: #673AB7; /* Deep Purple */
+}
+
+.work-experience ul li {
+  border-bottom: 1px solid #B39DDB ;
+}
+
+

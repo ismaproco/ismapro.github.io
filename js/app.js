@@ -23,21 +23,21 @@ app.controller('basicInformation',function() {
   /* work json array */
 
   this.work = [{
-      employer: 'Intertec International',
+      employeer: 'Intertec International',
       title: 'Application Developer',
       location: 'Costa Rica',
       dates: '12/12/2012',
       description: 'Work as a Vendor for Wells Fargo Bank, at the Information Security Area, as SharePoint Developer for internal projects.The projects include, create business dashboard for the managers, build intelligent forms using jQuery and InfoPath, Administration of Lists and Libraries data, and maintaining the Teams environment.',
      },
      {
-      employer: 'SharePoint Support Engineer',
+      employeer: 'SharePoint Support Engineer',
       title: 'Quintec',
       location: 'Colombia',
       dates: '02/01/2011-12/01/2012',
       description: 'Build new characteristics and client based solutions for SharePoint 2010 enterprise sites and also bring support to current installations, some of the tools that have been created are auction sites with HTML5 and CSS3 combined with SharePoint Master Pages, to bring live results to the contestants, also was part of the team for the BI dashboard for the ETB (Primary Bogotá Telephone Company) in Bogotá Colombia.',
      },
      {
-      employer: 'Software Developer' ,
+      employeer: 'Software Developer' ,
       title: 'Rolsoft',
       location: 'Colombia',
       dates: '12/01/2008-01/01/2011',

@@ -60,8 +60,8 @@
                 </div>
 
                 <!-- basic information card-->
-                <div class="mdl-card mdl-cell--6-col mdl-cell--8-col-tablet mdl-shadow--4dp">
-                  <div class="mdl-card__title">
+                <div class="mdl-card mdl-cell--6-col mdl-cell--8-col-tablet mdl-shadow--4dp contact-information">
+                  <div class="mdl-card__title card-header contact-information">
                      <h2 class="mdl-card__title-text">Contact Information</h2>
                   </div>
                   <div class="mdl-card__supporting-text">
@@ -75,8 +75,8 @@
                 </div>
                 
                 <!-- skills card -->
-                <div class="mdl-card mdl-cell--6-col mdl-cell--8-col-tablet mdl-shadow--4dp">
-                  <div class="mdl-card__title">
+                <div class="mdl-card mdl-cell--6-col mdl-cell--8-col-tablet mdl-shadow--4dp skills">
+                  <div class="mdl-card__title card-header">
                      <h2 class="mdl-card__title-text">Skills</h2>
                   </div>
                   <div class="mdl-card__supporting-text">
@@ -87,17 +87,17 @@
                 </div>
 
                 <!-- work experience grid -->
-                <div class="mdl-card mdl-cell--12-col mdl-shadow--4dp">
-                  <div class="mdl-card__title">
+                <div class="mdl-card mdl-cell--12-col mdl-shadow--4dp work-experience">
+                  <div class="mdl-card__title card-header">
                      <h2 class="mdl-card__title-text">Work Experience</h2>
                   </div>
                   <div class="mdl-card__supporting-text">
                     <ul>
                       <li ng-repeat="work in information.work" class="work-border">
-                          <div>employeer {{work.employeer}}</div>
-                          <div>title {{work.title}}</div>
-                          <div>location {{work.location}}</div>
-                          <div>dates {{work.dates}}</div>
+                          <div class="inline-title">employeer: {{work.employeer}}</div>
+                          <div class="inline-title">title: {{work.title}}</div>
+                          <div class="inline-title">location: {{work.location}}</div>
+                          <div class="inline-title">dates: {{work.dates}}</div>
                       </li>
                     </ul>
                   </div>
