@@ -112,4 +112,18 @@ ul {
   text-transform: capitalize;
 }
 
+/* education */
 
+.education .card-header {
+  background-color: #43A047; /* Green 600 */
+}
+
+.education ul li span{
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.education ul li {
+  border-bottom: 1px solid #2E7D32;
+  padding: 10px 0 10px 0;
+}

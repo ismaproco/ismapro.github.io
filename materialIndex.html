@@ -102,6 +102,34 @@
                     </ul>
                   </div>
                 </div>
+                
+                <!-- education grid -->
+                <div class="mdl-card mdl-cell--12-col mdl-shadow--4dp education">
+                  <div class="mdl-card__title card-header">
+                     <h2 class="mdl-card__title-text">Education</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                  <h4> College </h4>
+                    <ul>
+                      <li ng-repeat="school in information.education.schools" class="work-border">
+                          <div>{{school.degree}}</div>
+                          <div><span>name:</span> {{school.name}}</div>
+                          <div><span>location:</span> {{school.location}}</div>
+                          <div><span>majors:</span> {{school.majors}}</div>
+                          <div><span>dates:</span> {{school.dates}}</div>
+                      </li>
+                    </ul>
+                    <h4> Online Courses </h4>
+                    <ul>
+                      <li ng-repeat="courses in information.education.onlineCourses" class="work-border">
+                          <div>{{courses.title}}</div>
+                          <div><span>school:</span> {{courses.school}}</div>
+                          <div><span>date:</span> {{courses.date}}</div>
+                          <div><span>url:</span> {{courses.url}}</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
             </div>
         </main>
         <footer class="mdl-mini-footer">
