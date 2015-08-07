@@ -50,8 +50,8 @@ var HTMLWelcomeMsg = '<span class="welcome-message">%data%</span>';
 
 var HTMLskillsStart = '<h3>My skills:</h3>' +
                 '<ul id="skills" class="flex-box"></ul>';
-var HTMLskills = '<li class="flex-item"><span class="' + classHeaderSubText
-                                   + '">%data%</span></li>';
+var HTMLskills = '<li class="flex-item"><span class="' + classHeaderSubText + 
+                                                        '">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';
