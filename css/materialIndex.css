@@ -127,3 +127,34 @@ ul {
   border-bottom: 1px solid #2E7D32;
   padding: 10px 0 10px 0;
 }
+
+/* projects */
+
+.projects .card-header {
+  background-color: #FF5722; /* Green 600 */
+}
+
+.projects ul li span{
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.projects ul li {
+  padding: 10px 0 10px 0;
+}
+
+.projects ul li img {
+  width: 100%;
+}
+
+.projects ul li div:nth-child(1){
+  float:right;
+  color: #cccccc;
+  font-style: italic;
+}
+
+.projects ul li div:nth-child(2){
+  font-weight: bold;;
+  border-bottom: 1px solid #FF5722;
+}
+

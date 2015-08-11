@@ -109,7 +109,7 @@
                      <h2 class="mdl-card__title-text">Education</h2>
                   </div>
                   <div class="mdl-card__supporting-text">
-                  <h4> College </h4>
+                    <h4> College </h4>
                     <ul>
                       <li ng-repeat="school in information.education.schools" class="work-border">
                           <div>{{school.degree}}</div>
@@ -126,6 +126,22 @@
                           <div><span>school:</span> {{courses.school}}</div>
                           <div><span>date:</span> {{courses.date}}</div>
                           <div><span>url:</span> {{courses.url}}</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- projects grid -->
+                <div class="mdl-card mdl-cell--12-col mdl-shadow--4dp projects">
+                  <div class="mdl-card__title card-header">
+                     <h2 class="mdl-card__title-text">Projects</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <ul>
+                      <li ng-repeat="project in information.projects" class="work-border">
+                          <div>{{project.dates}}</div>
+                          <div>{{project.title}}</div>
+                          <div> {{project.description}}</div>
+                          <a href="{{project.link}}" target="_blank"><img ng-src="{{project.images[0]}}" /></a>
                       </li>
                     </ul>
                   </div>

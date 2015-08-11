@@ -73,6 +73,28 @@
       }]
     };
 
+    this.projects = [
+      {
+        title: 'Ismapro Blog',
+        dates: '11/01/2011',
+        description: 'Professional blog with different update with my findings, and solutions in various technologies',
+        images: ['images/ismapro-blog.jpg'],
+        link: 'http://ismapro.com/'
+      },
+      {
+        title: 'Frogger HTML5 Arcade',
+        dates: '01/25/2015',
+        description: 'Little HTML5 game, similar to the classic NES frogger game, it uses the web canvas, identify keyboard strokes, and has an score!',
+        images: ['images/arcade.jpg'],
+        link: 'http://ismapro.co/arcade/'
+      },
+      {
+        title: 'NanoMaps',
+        dates: '04/01/2015',
+        description: 'Fifth project of the nanodegree certification that shows places in a Google Map with the use of APIs like: Foursquare, LastFM, and instagram',
+        images: ['images/nanomaps.jpg'],
+        link: 'http://ismapro.co/nanomaps/'
+      }];
   });
 
 
