@@ -20,10 +20,10 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('css', function() {
-    return gulp.src(['bower_components/material-design-lite/meterial.css'])
+    return gulp.src(['bower_components/material-design-lite/material.min.css'])
       .pipe(concat('external.css'))
-      .pipe(cssmin())
       .pipe(rename({suffix: '.min'}))
+      .pipe(cssmin())
       .pipe(gulp.dest('dist'));
 });
 
@@ -33,7 +33,7 @@ gulp.task('watch-libs', function() {
   gulp.watch(['bower_components/jquery/dist/jquery.js',
         'bbower_components/material-design-lite/material.js'], ['scripts']);
    // Watch .scss files
-  gulp.watch('bower_components/material-design-lite/meterial.css', ['css']);
+  gulp.watch('bower_components/material-design-lite/material.min.css"', ['css']);
 });
 
 gulp.task('watch', function() {
