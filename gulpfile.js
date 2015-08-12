@@ -11,9 +11,9 @@ var imageop = require('gulp-image-optimization');
 
 
 gulp.task('scripts', function() {
-    return gulp.src(['bower_components/jquery/dist/jquery.js',
-        'bower_components/material-design-lite/material.js',
-        'bower_components/angular/angular.js'])
+    return gulp.src([
+        'bower_components/material-design-lite/material.min.js',
+        'bower_components/angular/angular.min.js'])
       .pipe(concat('libs.js'))
       .pipe(rename({suffix: '.min'}))
       .pipe(uglify())
