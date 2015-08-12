@@ -7,6 +7,7 @@ var rename = require('gulp-rename');
 var cssmin = require('gulp-cssmin');
 var jshint = require('gulp-jshint');
 var sass = require('gulp-ruby-sass');
+var imageop = require('gulp-image-optimization');
 
 
 gulp.task('scripts', function() {
@@ -26,7 +27,14 @@ gulp.task('css', function() {
       .pipe(cssmin())
       .pipe(gulp.dest('dist'));
 });
-
+ 
+gulp.task('images', function(cb) {
+    gulp.src(['images/**/*.png','images/**/*.jpg','images/**/*.gif','images/**/*.jpeg']).pipe(imageop({
+        optimizationLevel: 5,
+        progressive: true,
+        interlaced: true
+    })).pipe(gulp.dest('images')).on('end', cb).on('error', cb);
+});
 
 gulp.task('watch-libs', function() {
    // Watch .js files
@@ -53,7 +61,7 @@ gulp.task('lint', function() {
 
 
 // Default Task
-gulp.task('build', ['scripts','css']);
+gulp.task('build', ['scripts','css','images']);
 
 // Build Task
 gulp.task('default', ['watch-libs','watch','lint']);
