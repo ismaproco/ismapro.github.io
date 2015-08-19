@@ -96,7 +96,35 @@
         link: 'http://ismapro.co/nanomaps/'
       }];
   });
+/*
+  $(window).scroll(function() {
+    clearTimeout($.data(this, 'scrollTimer'));
+    $.data(this, 'scrollTimer', setTimeout(function() {
+        // do something
+        console.log("Haven't scrolled in 250ms!");
+    }, 250));
+  });
+*/
 
 
+  var delay = 100;
+  var timeout = null;
+  
+
+  window.onscroll = function(ev) {
+    var cards = document.querySelectorAll('.mdl-card');
+
+    for (var i = 0; i < cards.length; i++) {
+      angular.element(cards[i]).addClass('to-circle');
+    };
+
+    angular.element(cards[i]).addClass('to-circle');
+    clearTimeout(timeout);
+      timeout = setTimeout(function(){
+          for (var i = 0; i < cards.length; i++) {
+            angular.element(cards[i]).removeClass('to-circle');
+          };
+    },delay);
+  };
 
 }());
