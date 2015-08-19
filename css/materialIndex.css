@@ -43,6 +43,7 @@ ul {
 
 .mdl-card {
   margin: 10px 0 0 0;
+  transition: border-radius 1s linear;
 }
 
 .card-header {
@@ -158,6 +159,12 @@ ul {
   border-bottom: 1px solid #FF5722;
 }
 
+/* animations for the scroll */
+
+.to-circle
+{
+  border-radius: 50%;
+}
 
 /* media quueries for tablets */
 
