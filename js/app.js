@@ -114,16 +114,16 @@
   window.onscroll = function(ev) {
     var cards = document.querySelectorAll('.mdl-card');
 
-    for (var i = 0; i < cards.length; i++) {
+    for (var i = 0; i < cards.length; i=i+1) {
       angular.element(cards[i]).addClass('to-circle');
-    };
+    }
 
     angular.element(cards[i]).addClass('to-circle');
     clearTimeout(timeout);
       timeout = setTimeout(function(){
-          for (var i = 0; i < cards.length; i++) {
+          for (var i = 0; i < cards.length; i=i+1) {
             angular.element(cards[i]).removeClass('to-circle');
-          };
+          }
     },delay);
   };
 
